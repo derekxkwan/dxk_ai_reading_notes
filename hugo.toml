@@ -1,0 +1,22 @@
+baseURL = 'https://yourusername.github.io/my-papers/'  # Update this later
+languageCode = 'en-us'
+title = 'Paper Notes'
+theme = 'hugo-book'
+
+[params]
+  ShowBreadCrumbs = true
+  ShowPostNavLinks = true
+  ShowCodeCopyButtons = true
+
+[params.homeInfoParams]
+  Title = "Paper Notes"
+  Content = "Research paper notes and summaries"
+
+[taxonomies]
+  tag = 'tags'
+  category = 'categories'
+
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true  # Allow HTML in markdown
