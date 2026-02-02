@@ -1,4 +1,4 @@
-baseURL = 'https://derekxkwan.github.io/my-papers/'  # Update this later
+baseURL = 'https://derekxkwan.github.io/dxk_ai_reading_notes/'  # Update this later
 languageCode = 'en-us'
 title = 'Paper Notes'
 theme = 'hugo-book'
@@ -7,6 +7,9 @@ theme = 'hugo-book'
   ShowBreadCrumbs = true
   ShowPostNavLinks = true
   ShowCodeCopyButtons = true
+  BookSection = 'docs'
+  BookToC = false
+  BookTheme = 'auto'
 
 [params.homeInfoParams]
   Title = "Paper Notes"
