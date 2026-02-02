@@ -1,0 +1,15 @@
+{{ if and .Params.authors .Params.year }}
+  {{ $firstAuthor := index .Params.authors 0 }}
+  {{ $parts := split $firstAuthor " " }}
+  {{ $lastName := index $parts (sub (len $parts) 1) }}
+  {{ $title := .Title }}
+  {{ $shortTitle := $title }}
+  {{ if gt (len $title) 40 }}
+    {{ $shortTitle = printf "%s..." (slicestr $title 0 40) }}
+  {{ end }}
+  {{ $lastName }} ({{ .Params.year }}) - {{ $shortTitle }}
+{{ else if .Params.bibkey }}
+  {{ .Params.bibkey }}
+{{ else }}
+  {{ .Title }}
+{{ end }}

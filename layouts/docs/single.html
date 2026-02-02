@@ -1,0 +1,40 @@
+{{ define "main" }}
+<article class="markdown">
+  <h1>{{ .Title }}</h1>
+  {{ if .Params.authors }}
+  <p class="authors" style="font-size: 1.2rem; color: #666; margin-top: -0.5rem; margin-bottom: 1.5rem;">
+    {{ $authorCount := len .Params.authors }}
+    {{ if eq $authorCount 1 }}
+      {{ index .Params.authors 0 }}
+    {{ else if eq $authorCount 2 }}
+      {{ index .Params.authors 0 }} and {{ index .Params.authors 1 }}
+    {{ else if le $authorCount 3 }}
+      {{ delimit .Params.authors ", " }}
+    {{ else }}
+      {{ index .Params.authors 0 }} et al.
+    {{ end }}
+    {{ if .Params.year }}, {{ .Params.year }}{{ end }}
+  </p>
+  {{ end }}
+  
+  {{ .Content }}
+ 
+  {{ if .Params.tags }}
+  <div style="margin-top: 2rem; padding-top: 1rem; border-top: 1px solid #eee;">
+    <strong>Tags:</strong>
+    {{ range .Params.tags }}
+      <a href="{{ "/tags/" | relLangURL }}{{ . | urlize }}/" style="margin-right: 0.5rem; color: #0066cc;">{{ . }}</a>
+    {{ end }}
+  </div>
+  {{ end }}
+  
+  {{ if .Params.categories }}
+  <div style="margin-top: 0.5rem;">
+    <strong>Categories:</strong>
+    {{ range .Params.categories }}
+      <a href="{{ "/categories/" | relLangURL }}{{ . | urlize }}/" style="margin-right: 0.5rem; color: #0066cc;">{{ . }}</a>
+    {{ end }}
+  </div>
+  {{ end }}
+</article>
+{{ end }}

@@ -1,0 +1,30 @@
+{{ define "main" }}
+<article class="markdown">
+  <h1>Browse by Tag</h1>
+  
+  {{ $tagsByLetter := dict }}
+  {{ range .Pages }}
+    {{ $tagName := .Title }}
+    {{ $firstLetter := upper (substr $tagName 0 1) }}
+    
+    {{ $existing := index $tagsByLetter $firstLetter }}
+    {{ if $existing }}
+      {{ $tagsByLetter = merge $tagsByLetter (dict $firstLetter (append $existing .)) }}
+    {{ else }}
+      {{ $tagsByLetter = merge $tagsByLetter (dict $firstLetter (slice .)) }}
+    {{ end }}
+  {{ end }}
+  
+  {{ range $letter, $tags := $tagsByLetter }}
+    <h2>{{ $letter }}</h2>
+    <ul>
+    {{ range sort $tags "Title" }}
+      <li>
+        <a href="{{ .RelPermalink }}">{{ .Title }}</a>
+        <span style="color: #666;">({{ len .Pages }} papers)</span>
+      </li>
+    {{ end }}
+    </ul>
+  {{ end }}
+</article>
+{{ end }}

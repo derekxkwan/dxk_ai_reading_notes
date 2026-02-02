@@ -1,4 +1,4 @@
-baseURL = 'https://yourusername.github.io/my-papers/'  # Update this later
+baseURL = 'https://derekxkwan.github.io/my-papers/'  # Update this later
 languageCode = 'en-us'
 title = 'Paper Notes'
 theme = 'hugo-book'
@@ -15,8 +15,29 @@ theme = 'hugo-book'
 [taxonomies]
   tag = 'tags'
   category = 'categories'
+  author = 'authors'
 
 [markup]
   [markup.goldmark]
     [markup.goldmark.renderer]
       unsafe = true  # Allow HTML in markdown
+
+[[menu.before]]
+  name = "Browse by Tag"
+  url = "/tags/"
+  weight = 1
+
+[[menu.before]]
+  name = "Browse by Category"
+  url = "/categories/"
+  weight = 2
+
+[[menu.before]]
+  name = "Browse by Author"
+  url = "/authors/"
+  weight = 3
+
+[[menu.before]]
+  name = "─────────────"
+  url = ""
+  weight = 4

@@ -1,0 +1,33 @@
+{{ define "main" }}
+<article class="markdown">
+  <h1>Browse by Author</h1>
+  
+  {{ $authorsByLetter := dict }}
+  {{ range .Pages }}
+    {{ $authorName := .Title }}
+    {{ $parts := split $authorName " " }}
+    {{ $lastName := index $parts (sub (len $parts) 1) }}
+    {{ $firstLetter := upper (substr $lastName 0 1) }}
+    
+    {{ $existing := index $authorsByLetter $firstLetter }}
+    {{ if $existing }}
+      {{ $authorsByLetter = merge $authorsByLetter (dict $firstLetter (append $existing .)) }}
+    {{ else }}
+      {{ $authorsByLetter = merge $authorsByLetter (dict $firstLetter (slice .)) }}
+    {{ end }}
+  {{ end }}
+  
+  {{ range $letter, $authors := $authorsByLetter }}
+    <h2>{{ $letter }}</h2>
+    <ul>
+    {{ range sort $authors "Title" }}
+      <li>
+        <a href="{{ .RelPermalink }}">{{ .Title }}</a>
+        <span style="color: #666;">({{ len .Pages }} papers)</span>
+      </li>
+    {{ end }}
+    </ul>
+  {{ end }}
+</article>
+{{ end }}
+

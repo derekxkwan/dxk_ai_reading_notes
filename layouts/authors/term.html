@@ -1,0 +1,21 @@
+{{ define "main" }}
+<article class="markdown">
+  <h1>Papers tagged "{{ .Title }}"</h1>
+  
+  <ul>
+  {{ range .Pages }}
+    <li>
+      <a href="{{ .RelPermalink }}">{{ .Title }}</a>
+      {{ if .Params.authors }}
+        <span style="color: #666;">
+          - {{ $firstAuthor := index .Params.authors 0 }}
+          {{ $parts := split $firstAuthor " " }}
+          {{ index $parts (sub (len $parts) 1) }}
+          {{ if .Params.year }}({{ .Params.year }}){{ end }}
+        </span>
+      {{ end }}
+    </li>
+  {{ end }}
+  </ul>
+</article>
+{{ end }}

@@ -1,0 +1,31 @@
+{{ define "main" }}
+<article class="markdown">
+  <h1>Browse by Category</h1>
+  
+  {{ $categoriesByLetter := dict }}
+  {{ range .Pages }}
+    {{ $categoryName := .Title }}
+    {{ $firstLetter := upper (substr $categoryName 0 1) }}
+    
+    {{ $existing := index $categoriesByLetter $firstLetter }}
+    {{ if $existing }}
+      {{ $categoriesByLetter = merge $categoriesByLetter (dict $firstLetter (append $existing .)) }}
+    {{ else }}
+      {{ $categoriesByLetter = merge $categoriesByLetter (dict $firstLetter (slice .)) }}
+    {{ end }}
+  {{ end }}
+  
+  {{ range $letter, $categories := $categoriesByLetter }}
+    <h2>{{ $letter }}</h2>
+    <ul>
+    {{ range sort $categories "Title" }}
+      <li>
+        <a href="{{ .RelPermalink }}">{{ .Title }}</a>
+        <span style="color: #666;">({{ len .Pages }} papers)</span>
+      </li>
+    {{ end }}
+    </ul>
+  {{ end }}
+</article>
+{{ end }}
+
