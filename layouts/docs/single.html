@@ -28,12 +28,12 @@
     {{ if .Params.year }}, {{ .Params.year }}{{ end }}
     
     <!-- Links section -->
-    {{ if or .Params.doi .Params.url }}
+    {{ if or .Params.doi .Params.paper_url }}
       <span style="margin-left: 1rem;">
         {{ if .Params.doi }}
           [<a href="https://doi.org/{{ .Params.doi }}" target="_blank" rel="noopener">DOI</a>]
-        {{ else if .Params.url }}
-          [<a href="{{ .Params.url }}" target="_blank" rel="noopener">URL</a>]
+        {{ else if .Params.paper_url }}
+          [<a href="{{ .Params.paper_url }}" target="_blank" rel="noopener">URL</a>]
         {{ end }}
       </span>
     {{ end }}

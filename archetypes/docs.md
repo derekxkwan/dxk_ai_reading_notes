@@ -5,7 +5,7 @@ authors: []
 year: {{ replaceRE "^[a-zA-Z]+([0-9]{4}).*" "$1" .File.ContentBaseName }}
 tags: []
 categories: []
-url: ""
+paper_url: ""
 doi: ""
 venue: ""
 publisher: ""
