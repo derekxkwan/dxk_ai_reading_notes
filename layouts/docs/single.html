@@ -26,9 +26,7 @@
       <a href="{{ "/authors/" | relLangURL }}{{ $firstAuthor | urlize }}/">{{ $firstAuthor }}</a> et al.
     {{ end }}
     {{ if .Params.year }}, {{ .Params.year }}{{ end }}
-  </p>
-  {{ end }}
-
+    
     <!-- Links section -->
     {{ if or .Params.doi .Params.url }}
       <span style="margin-left: 1rem;">
@@ -42,9 +40,9 @@
     {{ end }}
   </p>
   {{ end }}
-
+  
   {{ .Content }}
- 
+  
   {{ if .Params.tags }}
   <div style="margin-top: 2rem; padding-top: 1rem; border-top: 1px solid #eee;">
     <strong>Tags:</strong>
@@ -64,3 +62,4 @@
   {{ end }}
 </article>
 {{ end }}
+
