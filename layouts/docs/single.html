@@ -6,15 +6,15 @@
     {{ $authorCount := len .Params.authors }}
     {{ if eq $authorCount 1 }}
       {{ $author := index .Params.authors 0 }}
-      <a href="{{ "/authors/" | relLangURL }}{{ $author | urlize }}/">{{ $author }}</a>
+      <a href="{{ "authors/" | relLangURL }}{{ $author | urlize }}/">{{ $author }}</a>
     {{ else if eq $authorCount 2 }}
       {{ $author1 := index .Params.authors 0 }}
       {{ $author2 := index .Params.authors 1 }}
-      <a href="{{ "/authors/" | relLangURL }}{{ $author1 | urlize }}/">{{ $author1 }}</a> and <a href="{{ "/authors/" | relLangURL }}{{ $author2 | urlize }}/">{{ $author2 }}</a>
+      <a href="{{ "authors/" | relLangURL }}{{ $author1 | urlize }}/">{{ $author1 }}</a> and <a href="{{ "/authors/" | relLangURL }}{{ $author2 | urlize }}/">{{ $author2 }}</a>
     {{ else if le $authorCount 15 }}
       {{ range $i, $author := .Params.authors }}
         {{ if eq $i 0 }}
-          <a href="{{ "/authors/" | relLangURL }}{{ $author | urlize }}/">{{ $author }}</a>
+          <a href="{{ "authors/" | relLangURL }}{{ $author | urlize }}/">{{ $author }}</a>
         {{ else if eq $i (sub $authorCount 1) }}
           , and <a href="{{ "/authors/" | relLangURL }}{{ $author | urlize }}/">{{ $author }}</a>
         {{ else }}
