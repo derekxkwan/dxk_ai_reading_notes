@@ -5,18 +5,44 @@
   <p class="authors" style="font-size: 1.2rem; color: #666; margin-top: -0.5rem; margin-bottom: 1.5rem;">
     {{ $authorCount := len .Params.authors }}
     {{ if eq $authorCount 1 }}
-      {{ index .Params.authors 0 }}
+      {{ $author := index .Params.authors 0 }}
+      <a href="{{ "/authors/" | relLangURL }}{{ $author | urlize }}/">{{ $author }}</a>
     {{ else if eq $authorCount 2 }}
-      {{ index .Params.authors 0 }} and {{ index .Params.authors 1 }}
-    {{ else if le $authorCount 3 }}
-      {{ delimit .Params.authors ", " }}
+      {{ $author1 := index .Params.authors 0 }}
+      {{ $author2 := index .Params.authors 1 }}
+      <a href="{{ "/authors/" | relLangURL }}{{ $author1 | urlize }}/">{{ $author1 }}</a> and <a href="{{ "/authors/" | relLangURL }}{{ $author2 | urlize }}/">{{ $author2 }}</a>
+    {{ else if le $authorCount 15 }}
+      {{ range $i, $author := .Params.authors }}
+        {{ if eq $i 0 }}
+          <a href="{{ "/authors/" | relLangURL }}{{ $author | urlize }}/">{{ $author }}</a>
+        {{ else if eq $i (sub $authorCount 1) }}
+          , and <a href="{{ "/authors/" | relLangURL }}{{ $author | urlize }}/">{{ $author }}</a>
+        {{ else }}
+          , <a href="{{ "/authors/" | relLangURL }}{{ $author | urlize }}/">{{ $author }}</a>
+        {{ end }}
+      {{ end }}
     {{ else }}
-      {{ index .Params.authors 0 }} et al.
+      {{ $firstAuthor := index .Params.authors 0 }}
+      <a href="{{ "/authors/" | relLangURL }}{{ $firstAuthor | urlize }}/">{{ $firstAuthor }}</a> et al.
     {{ end }}
     {{ if .Params.year }}, {{ .Params.year }}{{ end }}
   </p>
   {{ end }}
-  
+
+    <!-- Links section -->
+    {{ if or .Params.doi .Params.url }}
+      <span style="margin-left: 1rem;">
+        {{ if .Params.doi }}
+          [<a href="https://doi.org/{{ .Params.doi }}" target="_blank" rel="noopener">DOI</a>]
+        {{ end }}
+        {{ if .Params.url }}
+          [<a href="{{ .Params.url }}" target="_blank" rel="noopener">URL</a>]
+        {{ end }}
+      </span>
+    {{ end }}
+  </p>
+  {{ end }}
+
   {{ .Content }}
  
   {{ if .Params.tags }}

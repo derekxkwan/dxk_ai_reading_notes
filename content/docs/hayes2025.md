@@ -5,6 +5,10 @@ authors: ["Ben Hayes", "Charalampos Saitis", "György Fazekas"]
 year: 2025
 tags: ["flow matching", "normalizing flows", "synth parameters"]
 categories: ["diffusion", "inversion", "audio", "synthesizer"]
+url: "Proceedings of the 26th International Society for Music Information Retrieval Conference"
+doi: "10.5281/zenodo.17706418"
+venue: ""
+publisher: ""
 bibkey: "hayes2025"
 math: true
 draft: false
