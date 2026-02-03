@@ -18,12 +18,12 @@
         {{ else if eq $i (sub $authorCount 1) }}
           , and <a href="{{ "/authors/" | relLangURL }}{{ $author | urlize }}/">{{ $author }}</a>
         {{ else }}
-          , <a href="{{ "/authors/" | relLangURL }}{{ $author | urlize }}/">{{ $author }}</a>
+          , <a href="{{ "authors/" | relLangURL }}{{ $author | urlize }}/">{{ $author }}</a>
         {{ end }}
       {{ end }}
     {{ else }}
       {{ $firstAuthor := index .Params.authors 0 }}
-      <a href="{{ "/authors/" | relLangURL }}{{ $firstAuthor | urlize }}/">{{ $firstAuthor }}</a> et al.
+      <a href="{{ "authors/" | relLangURL }}{{ $firstAuthor | urlize }}/">{{ $firstAuthor }}</a> et al.
     {{ end }}
     {{ if .Params.year }}, {{ .Params.year }}{{ end }}
     
@@ -32,8 +32,7 @@
       <span style="margin-left: 1rem;">
         {{ if .Params.doi }}
           [<a href="https://doi.org/{{ .Params.doi }}" target="_blank" rel="noopener">DOI</a>]
-        {{ end }}
-        {{ if .Params.url }}
+        {{ else if .Params.url }}
           [<a href="{{ .Params.url }}" target="_blank" rel="noopener">URL</a>]
         {{ end }}
       </span>
@@ -47,7 +46,7 @@
   <div style="margin-top: 2rem; padding-top: 1rem; border-top: 1px solid #eee;">
     <strong>Tags:</strong>
     {{ range .Params.tags }}
-      <a href="{{ "/tags/" | relLangURL }}{{ . | urlize }}/" style="margin-right: 0.5rem; color: #0066cc;">{{ . }}</a>
+      <a href="{{ "tags/" | relLangURL }}{{ . | urlize }}/" style="margin-right: 0.5rem; color: #0066cc;">{{ . }}</a>
     {{ end }}
   </div>
   {{ end }}
@@ -56,7 +55,7 @@
   <div style="margin-top: 0.5rem;">
     <strong>Categories:</strong>
     {{ range .Params.categories }}
-      <a href="{{ "/categories/" | relLangURL }}{{ . | urlize }}/" style="margin-right: 0.5rem; color: #0066cc;">{{ . }}</a>
+      <a href="{{ "categories/" | relLangURL }}{{ . | urlize }}/" style="margin-right: 0.5rem; color: #0066cc;">{{ . }}</a>
     {{ end }}
   </div>
   {{ end }}
