@@ -2,32 +2,30 @@
 <article class="markdown">
   <h1>Browse by Author</h1>
   
-  {{ $authorsByLetter := dict }}
+  {{ $authorGroups := slice }}
+  
   {{ range .Pages }}
     {{ $authorName := .Title }}
     {{ $parts := split $authorName " " }}
     {{ $lastName := index $parts (sub (len $parts) 1) }}
     {{ $firstLetter := upper (substr $lastName 0 1) }}
     
-    {{ $existing := index $authorsByLetter $firstLetter }}
-    {{ if $existing }}
-      {{ $authorsByLetter = merge $authorsByLetter (dict $firstLetter (append $existing .)) }}
-    {{ else }}
-      {{ $authorsByLetter = merge $authorsByLetter (dict $firstLetter (slice .)) }}
-    {{ end }}
+    {{ $authorGroups = $authorGroups | append (dict "letter" $firstLetter "page" . "lastName" $lastName) }}
   {{ end }}
   
-  {{ range $letter, $authors := $authorsByLetter }}
-    <h2>{{ $letter }}</h2>
-    <ul>
-    {{ range sort $authors "Title" }}
-      <li>
-        <a href="{{ .RelPermalink }}">{{ .Title }}</a>
-        <span style="color: #666;">({{ len .Pages }} papers)</span>
-      </li>
+  {{ $currentLetter := "" }}
+  {{ range sort $authorGroups "lastName" }}
+    {{ if ne .letter $currentLetter }}
+      {{ if $currentLetter }}</ul>{{ end }}
+      <h2>{{ .letter }}</h2>
+      <ul>
+      {{ $currentLetter = .letter }}
     {{ end }}
-    </ul>
+    <li>
+      <a href="{{ .page.RelPermalink }}">{{ .page.Title }}</a>
+      <span style="color: #666;">({{ len .page.Pages }} papers)</span>
+    </li>
   {{ end }}
+  {{ if $currentLetter }}</ul>{{ end }}
 </article>
 {{ end }}
-

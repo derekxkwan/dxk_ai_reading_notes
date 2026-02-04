@@ -2,30 +2,28 @@
 <article class="markdown">
   <h1>Browse by Category</h1>
   
-  {{ $categoriesByLetter := dict }}
+  {{ $categoryGroups := slice }}
+  
   {{ range .Pages }}
     {{ $categoryName := .Title }}
     {{ $firstLetter := upper (substr $categoryName 0 1) }}
     
-    {{ $existing := index $categoriesByLetter $firstLetter }}
-    {{ if $existing }}
-      {{ $categoriesByLetter = merge $categoriesByLetter (dict $firstLetter (append $existing .)) }}
-    {{ else }}
-      {{ $categoriesByLetter = merge $categoriesByLetter (dict $firstLetter (slice .)) }}
-    {{ end }}
+    {{ $categoryGroups = $categoryGroups | append (dict "letter" $firstLetter "page" . "name" $categoryName) }}
   {{ end }}
   
-  {{ range $letter, $categories := $categoriesByLetter }}
-    <h2>{{ $letter }}</h2>
-    <ul>
-    {{ range sort $categories "Title" }}
-      <li>
-        <a href="{{ .RelPermalink }}">{{ .Title }}</a>
-        <span style="color: #666;">({{ len .Pages }} papers)</span>
-      </li>
+  {{ $currentLetter := "" }}
+  {{ range sort $categoryGroups "name" }}
+    {{ if ne .letter $currentLetter }}
+      {{ if $currentLetter }}</ul>{{ end }}
+      <h2>{{ .letter }}</h2>
+      <ul>
+      {{ $currentLetter = .letter }}
     {{ end }}
-    </ul>
+    <li>
+      <a href="{{ .page.RelPermalink }}">{{ .page.Title }}</a>
+      <span style="color: #666;">({{ len .page.Pages }} papers)</span>
+    </li>
   {{ end }}
+  {{ if $currentLetter }}</ul>{{ end }}
 </article>
 {{ end }}
-

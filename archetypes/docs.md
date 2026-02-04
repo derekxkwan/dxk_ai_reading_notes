@@ -7,10 +7,7 @@ tags: []
 categories: []
 paper_url: ""
 doi: ""
-venue: ""
-publisher: ""
-pages: ""
-city: ""
+paper_src: ""
 bibkey: "{{ .File.ContentBaseName }}"
 math: true
 draft: false

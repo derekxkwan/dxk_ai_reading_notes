@@ -6,9 +6,9 @@ year: 2025
 tags: ["flow matching", "normalizing flows", "synth parameters"]
 categories: ["diffusion", "inversion", "audio", "synthesizer"]
 paper_url: ""
+paper_type: ""
 doi: "10.5281/zenodo.17706418"
-venue: ""
-publisher: "Proceedings of the 26th International Society for Music Information Retrieval Conference"
+paper_src: "Proceedings of the 26th International Society for Music Information Retrieval Conference"
 bibkey: "hayes2025"
 math: true
 draft: false
