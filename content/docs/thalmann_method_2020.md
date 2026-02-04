@@ -1,7 +1,7 @@
 ---
 title: "A method for analysis of shared structure in large music collections using techniques from genetic sequencing and graph theory"
 date: 2026-02-02T13:45:57-08:00
-authors: ["Florian Thalmann", "Kazuyoshi Yoshii", "Thomas Wilmering", "Wiggins Geraint", "Mark B. Sandler"]
+authors: ["Florian Thalmann", "Kazuyoshi Yoshii", "Thomas Wilmering", "Geraint Wiggins", "Mark B. Sandler"]
 year: 2020
 tags: ["beat-aligned", "sequence alignment", "onset-aligned similarity", "hierarchical analysis", "pitch (music)", "hmm", "profile hmm", "beat-aligned similarity", "bioinformatics", "bar-aligned similarity", "musical form", "similarity graph", "chroma", "music theory", "formal analysis (music)", "msa", "bar-aligned", "music", "onset-aligned"]
 categories: ["unsupervised", "non-neural network", "probabilistic"]
