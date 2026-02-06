@@ -1,6 +1,6 @@
 {{ define "main" }}
 <article class="markdown">
-  <h1>Papers tagged "{{ .Title }}"</h1>
+  <h1>Papers in "{{ .Title }}" ({{ len .Pages }})</h1>
   
   <ul>
   {{ range .Pages }}
