@@ -24,7 +24,12 @@ theme = 'hugo-book'
   [markup.goldmark]
     [markup.goldmark.renderer]
       unsafe = true  # Allow HTML in markdown
-
+    [markup.goldmark.extensions.passthrough]
+      enable = true
+    [markup.goldmark.extensions.passthrough.delimiters]
+      inline = [['$', '$'], ['\\(', '\\)']]
+      block = [['$$', '$$'], ['\\[', '\\]']]
+    
 [[menu.before]]
   name = "Browse by Tag"
   url = "/tags/"
