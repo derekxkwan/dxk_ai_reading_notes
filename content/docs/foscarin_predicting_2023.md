@@ -3,8 +3,8 @@ title: "Predicting Music Hierarchies with a Graph-Based Neural Decoder"
 date: 2026-02-02T13:45:57-08:00
 authors: ["Francesco Foscarin", "Daniel Harasim", "Gerhard Widmer"]
 year: 2023
-tags: ["music theory", "dependency tree", "romantic period (music)", "graph", "baroque music", "classical period (music)", "graph neural network", "music", "jazz", "symbolic music", "hierarchical analysis", "harmonic analysis (music)", "harmony (music)", "gnn", "classical music"]
-categories: ["supervised", "deep learning"]
+tags: ["harmonic analysis (music)", "hierarchical analysis", "music", "jazz", "classical music", "romantic period (music)", "graph", "classical period (music)", "graph neural network", "harmony (music)", "symbolic music", "baroque music", "gnn", "music theory", "dependency tree"]
+categories: ["deep learning", "supervised"]
 paper_url: ""
 doi: ""
 paper_src: "Proceedings of the International Society for Music Information Retrieval Conference (ISMIR)"

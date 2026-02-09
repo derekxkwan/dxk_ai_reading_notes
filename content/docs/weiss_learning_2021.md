@@ -3,8 +3,8 @@ title: "Learning Pitch-Class Representations from Score- Audio Pairs of Classica
 date: 2026-02-02T13:45:57-08:00
 authors: ["Christof Weiss", "Johannes Zeitler", "Tim Zunner", "Florian Schuberth", "Meinard Müller"]
 year: 2021
-tags: ["harmonic cqt", "representation learning", "score-aligned (music)", "chord labeling (music)", "pitch (music)", "classical music", "cqt", "baroque music", "multi-pitch detection", "cnn", "chord recognition", "chroma", "classical period (music)", "neural network architecture development", "audio", "music theory", "romantic period (music)", "music", "multi-pitch recognition"]
-categories: ["supervised", "deep learning"]
+tags: ["chord recognition", "cqt", "multi-pitch recognition", "chord labeling (music)", "chroma", "cnn", "classical period (music)", "representation learning", "multi-pitch detection", "score-aligned (music)", "music", "romantic period (music)", "neural network architecture development", "baroque music", "music theory", "audio", "pitch (music)", "harmonic cqt", "classical music"]
+categories: ["deep learning", "supervised"]
 paper_url: "https://doi.org/10.5281/zenodo.5624549"
 doi: "10.5281/zenodo.5624549"
 paper_src: "Proceedings of the 22nd International Society for Music Information Retrieval Conference"

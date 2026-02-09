@@ -3,8 +3,8 @@ title: "Uncovering Audio Patterns in Music with Nonnegative Tucker Decomposition
 date: 2026-02-02T13:45:57-08:00
 authors: ["Axel Marmoret", "Jérémy E Cohen", "Nancy Bertin", "Frédéric Bimbot"]
 year: 2020
-tags: ["handcrafted features", "music theory", "formal analysis (music)", "tucker", "autosimilarity", "beat-aligned similarity", "beat-aligned", "tensor", "popular music", "self-similarity matrix", "chroma", "music", "chromagram", "non-negative", "audio", "boundary detection (music)"]
-categories: ["unsupervised", "non-neural network"]
+tags: ["beat-aligned similarity", "self-similarity matrix", "music", "audio", "non-negative", "formal analysis (music)", "boundary detection (music)", "autosimilarity", "chroma", "tensor", "chromagram", "beat-aligned", "handcrafted features", "music theory", "popular music", "tucker"]
+categories: ["non-neural network", "unsupervised"]
 paper_url: "https://hal.science/hal-02928733"
 doi: ""
 paper_src: "Proceedings of the International Society for Music Information Retrieval Conference"

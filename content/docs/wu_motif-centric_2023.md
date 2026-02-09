@@ -3,7 +3,7 @@ title: "Motif-Centric Representation Learning for Symbolic Music"
 date: 2026-02-02T13:45:57-08:00
 authors: ["Yuxuan Wu", "Roger B. Dannenberg", "Gus Xia"]
 year: 2023
-tags: ["motif (music)", "music theory", "midi", "popular music", "data augmentation", "contrastive learning", "music", "symbolic music", "contrastive", "vicreg", "neural network architecture development"]
+tags: ["midi", "music", "contrastive learning", "vicreg", "neural network architecture development", "data augmentation", "symbolic music", "contrastive", "motif (music)", "music theory", "popular music"]
 categories: ["supervised"]
 paper_url: "http://arxiv.org/abs/2309.10597"
 doi: "10.48550/arXiv.2309.10597"

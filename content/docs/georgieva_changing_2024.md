@@ -3,7 +3,7 @@ title: "The Changing Sound of Music: An Exploratory Corpus Study of Vocal Trends
 date: 2026-02-02T13:45:57-08:00
 authors: ["Elena Georgieva", "Pablo Ripollés", "Brian McFee"]
 year: 2024
-tags: ["musicology", "music theory", "melodic (music)", "pitch (music)", "million song dataset", "vocal instrumentation", "popular music", "pitch distribution", "musicological", "music", "jazz", "year", "audio", "genre", "vocals"]
+tags: ["vocal instrumentation", "musicology", "pitch distribution", "year", "music", "audio", "jazz", "genre", "pitch (music)", "million song dataset", "vocals", "music theory", "popular music", "melodic (music)", "musicological"]
 categories: ["regression", "non-neural network"]
 paper_url: "http://www.scopus.com/inward/record.url?scp=85219420212&partnerID=8YFLogxK"
 doi: ""

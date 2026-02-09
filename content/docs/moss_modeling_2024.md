@@ -3,7 +3,7 @@ title: "Modeling the Evolution of Harmony in Popular Music from Different Cultur
 date: 2026-02-02T13:45:57-08:00
 authors: ["Fabian C. Moss", "Eita Nakamura"]
 year: 2024
-tags: ["uspop", "brazilian music", "musicology", "music theory", "chord symbols", "choro", "jpop", "popular music", "musicological", "pop", "japanese music", "music", "symbolic music", "harmonic analysis (music)", "expectation maximization"]
+tags: ["pop", "chord symbols", "musicology", "harmonic analysis (music)", "music", "choro", "uspop", "popular music", "japanese music", "expectation maximization", "symbolic music", "brazilian music", "music theory", "jpop", "musicological"]
 categories: ["non-neural network", "probabilistic"]
 paper_url: ""
 doi: ""

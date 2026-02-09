@@ -3,7 +3,7 @@ title: "Polyffusion: A Diffusion Model for Polyphonic Score Generation with Inte
 date: 2026-02-02T13:45:57-08:00
 authors: ["Lejun Min", "Junyan Jiang", "Gus Xia", "Jingwei Zhao"]
 year: 2023
-tags: ["diffusion", "music theory", "classifier-free guidance", "ddpm", "popular music", "disentangled", "piano roll", "cross-attention", "music", "symbolic music", "pop909", "chord-texture (music)"]
+tags: ["disentangled", "ddpm", "cross-attention", "pop909", "music", "diffusion", "symbolic music", "classifier-free guidance", "chord-texture (music)", "piano roll", "music theory", "popular music"]
 categories: ["deep learning"]
 paper_url: ""
 doi: ""

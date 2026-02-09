@@ -3,7 +3,7 @@ title: "Unsupervised Learning of Deep Features for Music Segmentation"
 date: 2026-02-02T13:45:57-08:00
 authors: ["Matthew C. McCallum"]
 year: 2019
-tags: ["cqt", "music theory", "audio", "formal analysis (music)", "beat-aligned", "boundary detection (music)", "beat-aligned similarity", "convolutional", "popular music", "representation learning", "segmentation", "music", "contrastive", "cnn", "self-similarity matrix", "music boundary", "triplet loss", "beatles"]
+tags: ["convolutional", "beatles", "music boundary", "triplet loss", "self-similarity matrix", "music", "music theory", "audio", "beat-aligned similarity", "boundary detection (music)", "cnn", "representation learning", "segmentation", "beat-aligned", "contrastive", "cqt", "popular music", "formal analysis (music)"]
 categories: ["unsupervised", "deep learning"]
 paper_url: "https://ieeexplore.ieee.org/abstract/document/8683407"
 doi: "10.1109/ICASSP.2019.8683407"

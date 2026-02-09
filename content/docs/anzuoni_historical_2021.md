@@ -3,8 +3,8 @@ title: "A Historical Analysis of Harmonic Progressions Using Chord Embeddings"
 date: 2026-02-02T13:45:57-08:00
 authors: ["Elia Anzuoni", "Sinan Ayhan", "Federico Dutto", "Andrew McLeod", "Fabian Moss", "Martin Rohrmeier"]
 year: 2021
-tags: ["embeddings", "representation learning", "hierarchical analysis", "classical music", "musicology", "lstm", "baroque music", "symbolic music", "language-inspired (music)", "early 20th c. (music)", "musicological", "classical period (music)", "roman numeral analysis", "harmonic analysis (music)", "rnn", "music theory", "nlp", "romantic period (music)", "music", "music history", "word2vec"]
-categories: ["deep learning", "supervised", "classification", "clustering"]
+tags: ["musicology", "lstm", "embeddings", "word2vec", "harmonic analysis (music)", "music history", "classical period (music)", "representation learning", "symbolic music", "language-inspired (music)", "nlp", "roman numeral analysis", "rnn", "music", "romantic period (music)", "baroque music", "music theory", "early 20th c. (music)", "musicological", "hierarchical analysis", "classical music"]
+categories: ["classification", "deep learning", "supervised", "clustering"]
 paper_url: ""
 doi: ""
 paper_src: "Proceedings of the 18th Sound and Music Computing Conference"

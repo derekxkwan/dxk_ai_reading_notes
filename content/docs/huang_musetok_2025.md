@@ -3,7 +3,7 @@ title: "MuseTok: Symbolic Music Tokenization for Generation and Semantic Underst
 date: 2026-02-02T13:45:57-08:00
 authors: ["Jingyue Huang", "Zachary Novack", "Phillip Long", "Yupeng Hou", "Ke Chen", "Taylor Berg-Kirkpatrick", "Julian McAuley"]
 year: 2025
-tags: ["music theory", "melodic (music)", "instrumental orchestration", "popular music", "autoencoder", "representation learning", "music", "rvq-vae", "symbolic music", "hierarchical analysis", "chord labeling (music)", "harmonic analysis (music)", "emotion", "transformer"]
+tags: ["rvq-vae", "autoencoder", "harmonic analysis (music)", "hierarchical analysis", "music", "chord labeling (music)", "instrumental orchestration", "emotion", "transformer", "representation learning", "symbolic music", "music theory", "popular music", "melodic (music)"]
 categories: ["unsupervised", "deep learning"]
 paper_url: "http://arxiv.org/abs/2510.16273"
 doi: "10.48550/arXiv.2510.16273"

@@ -3,7 +3,7 @@ title: "Discovering Interpretable Concepts in Large Generative Music Models"
 date: 2026-02-02T13:45:57-08:00
 authors: ["Nikhil Singh", "Manuel Cherep", "Pattie Maes"]
 year: 2025
-tags: ["concept discovery", "music theory", "generative", "popular music", "autoencoder", "music", "representation leveraging", "raw waveforms", "audio"]
+tags: ["generative", "autoencoder", "music", "audio", "concept discovery", "raw waveforms", "representation leveraging", "music theory", "popular music"]
 categories: ["xai", "deep learning"]
 paper_url: "http://arxiv.org/abs/2505.18186"
 doi: "10.48550/arXiv.2505.18186"

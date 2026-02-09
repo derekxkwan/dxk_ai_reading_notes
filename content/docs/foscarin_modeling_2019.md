@@ -3,8 +3,8 @@ title: "Modeling and Learning Rhythm Structure"
 date: 2026-02-02T13:45:57-08:00
 authors: ["Francesco Foscarin", "Florent Jacquemard", "Philippe Rigaux"]
 year: 2019
-tags: ["music theory", "context-free grammar", "parse trees", "rhythmic (music)", "music", "jazz", "symbolic music", "classical music"]
-categories: ["supervised", "non-neural network", "probabilistic"]
+tags: ["parse trees", "music", "jazz", "rhythmic (music)", "symbolic music", "context-free grammar", "music theory", "classical music"]
+categories: ["non-neural network", "probabilistic", "supervised"]
 paper_url: "https://inria.hal.science/hal-02024437"
 doi: ""
 paper_src: "Sound and Music Computing Conference (SMC)"

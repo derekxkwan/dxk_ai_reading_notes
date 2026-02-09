@@ -3,8 +3,8 @@ title: "Identifying Irish Traditional Music Genres Using Latent Audio Representa
 date: 2026-02-02T13:45:57-08:00
 authors: ["Diego M. Jiménez-Bravo", "Álvaro Lozano Murciego", "Juan José Navarro-Cáceres", "María Navarro-Cáceres", "Treasa Harkin"]
 year: 2024
-tags: ["mule", "musicology", "music theory", "melodic (music)", "lda", "genre classification (music)", "vocal instrumentation", "midi", "mert", "irish", "jukebox", "music", "musicxml", "symbolic music", "representation leveraging", "symbolic music to audio", "folk music"]
-categories: ["supervised", "non-neural network", "classification"]
+tags: ["vocal instrumentation", "musicology", "lda", "midi", "music", "symbolic music to audio", "folk music", "jukebox", "representation leveraging", "symbolic music", "musicxml", "irish", "mule", "music theory", "melodic (music)", "mert", "genre classification (music)"]
+categories: ["classification", "supervised", "non-neural network"]
 paper_url: "https://ieeexplore.ieee.org/abstract/document/10579819"
 doi: "10.1109/ACCESS.2024.3421639"
 paper_src: "IEEE Access"

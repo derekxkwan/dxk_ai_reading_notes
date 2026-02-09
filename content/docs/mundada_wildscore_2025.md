@@ -3,7 +3,7 @@ title: "WildScore: Benchmarking MLLMs in-the-Wild Symbolic Music Reasoning"
 date: 2026-02-02T13:45:57-08:00
 authors: ["Gagan Mundada", "Yash Vishe", "Amit Namburi", "Xin Xu", "Zachary Novack", "Julian McAuley", "Junda Wu"]
 year: 2025
-tags: ["music theory", "multimodal", "benchmark", "llm", "music", "symbolic music", "classical music"]
+tags: ["llm", "music", "music theory", "symbolic music", "benchmark", "multimodal", "classical music"]
 categories: []
 paper_url: "https://aclanthology.org/2025.emnlp-main.853/"
 doi: "10.18653/v1/2025.emnlp-main.853"

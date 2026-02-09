@@ -3,7 +3,7 @@ title: "Pitchclass2vec: Symbolic Music Structure Segmentation with Chord Embeddi
 date: 2026-02-02T13:45:57-08:00
 authors: ["Nicolas Lazzari", "Andrea Poltronieri", "Valentina Presutti"]
 year: 2023
-tags: ["harmonic analysis (music)", "music theory", "formal analysis (music)", "structure labeling (music)", "pitch classes", "popular music", "representation learning", "segmentation", "music", "symbolic music", "language-inspired (music)", "word2vec", "rnn", "fasttext", "boundary detection (music)"]
+tags: ["harmonic analysis (music)", "rnn", "music", "boundary detection (music)", "fasttext", "representation learning", "segmentation", "symbolic music", "pitch classes", "language-inspired (music)", "word2vec", "music theory", "popular music", "structure labeling (music)", "formal analysis (music)"]
 categories: ["deep learning"]
 paper_url: "https://ui.adsabs.harvard.edu/abs/2023arXiv230315306L"
 doi: "10.48550/arXiv.2303.15306"

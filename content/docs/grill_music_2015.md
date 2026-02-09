@@ -3,8 +3,8 @@ title: "Music Boundary Detection Using Neural Networks on Combined Features and 
 date: 2026-02-02T13:45:57-08:00
 authors: ["Thomas Grill", "Jan Schlüter"]
 year: 2015
-tags: ["log-mel spectrogram", "music theory", "non-bar/beat aligned similarity", "multi-representation", "convolutional", "log mel spectrogram", "representation learning", "multi-level", "segmentation", "music", "hpss", "hierarchical analysis", "cnn", "self-similarity matrix", "music boundary", "audio", "boundary detection (music)"]
-categories: ["supervised", "deep learning"]
+tags: ["convolutional", "music boundary", "hierarchical analysis", "hpss", "music", "audio", "self-similarity matrix", "log mel spectrogram", "cnn", "representation learning", "non-bar/beat aligned similarity", "multi-level", "segmentation", "multi-representation", "music theory", "boundary detection (music)", "log-mel spectrogram"]
+categories: ["deep learning", "supervised"]
 paper_url: "https://zenodo.org/records/1417461"
 doi: "10.5281/zenodo.1417461"
 paper_src: ""
@@ -14,7 +14,7 @@ draft: false
 ---
 
 ## Summary
-seconds compared to MIREX 2012 to 2014 on first and second level boundaries (SALAMI has two levels of annotations).
+Uses training format of ullrich\_boundary\_2014 to train CNN features with log-Mel and log-Mel harmonic-percussive source separation. Calculates both SSM and SSM with concatenate features in windows (looping around in case of negative time steps). cosine-similarity is soft thresholded. Uses SALAMI. Performs best with all features on tolerance of $\pm 0.5$ seconds compared to MIREX 2012 to 2014 on first and second level boundaries (SALAMI has two levels of annotations).
 
 ## Key Contributions
 

@@ -3,7 +3,7 @@ title: "Mel2Word: A Text-Based Melody Representation for Symbolic Music Analysis
 date: 2026-02-02T13:45:57-08:00
 authors: ["Saebyul Park", "Eunjin Choi", "Jeounghoon Kim", "Juhan Nam"]
 year: 2024
-tags: ["handcrafted features", "melodic (music)", "music theory", "genre classification (music)", "nlp", "inter-onset interval (music)", "representation learning", "segmentation", "bpe", "music", "symbolic music", "language-inspired (music)", "folk music"]
+tags: ["music", "folk music", "handcrafted features", "bpe", "representation learning", "symbolic music", "segmentation", "nlp", "inter-onset interval (music)", "language-inspired (music)", "music theory", "melodic (music)", "genre classification (music)"]
 categories: ["non-neural network"]
 paper_url: "https://doi.org/10.1177/20592043231216254"
 doi: "10.1177/20592043231216254"

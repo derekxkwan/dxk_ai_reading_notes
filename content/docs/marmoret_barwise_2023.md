@@ -3,7 +3,7 @@ title: "Barwise Music Structure Analysis with the Correlation Block-Matching Seg
 date: 2026-02-02T13:45:57-08:00
 authors: ["Axel Marmoret", "Jérémy E. Cohen", "Frédéric Bimbot"]
 year: 2023
-tags: ["handcrafted features", "music theory", "audio", "formal analysis (music)", "dynamic programming", "boundary detection (music)", "popular music", "spectrogram", "log mel spectrogram", "vectorization", "music", "bar-aligned similarity", "self-similarity matrix", "bar-aligned"]
+tags: ["dynamic programming", "self-similarity matrix", "music", "audio", "boundary detection (music)", "log mel spectrogram", "vectorization", "spectrogram", "handcrafted features", "bar-aligned similarity", "bar-aligned", "music theory", "popular music", "formal analysis (music)"]
 categories: ["non-neural network"]
 paper_url: "https://transactions.ismir.net/articles/10.5334/tismir.167"
 doi: "10.5334/tismir.167"

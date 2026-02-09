@@ -3,7 +3,7 @@ title: "MUSE-Explainer: Counterfactual Explanations for Symbolic Music Graph Cla
 date: 2026-02-02T13:45:57-08:00
 authors: ["Baptiste Hilaire", "Emmanouil Karystinaios", "Gerhard Widmer"]
 year: 2025
-tags: ["music theory", "instrumental orchestration", "cadence detection (music)", "conuterfactual", "classical period (music)", "music", "symbolic music", "harmonic analysis (music)", "gnn", "classical music"]
+tags: ["harmonic analysis (music)", "music", "instrumental orchestration", "cadence detection (music)", "classical period (music)", "symbolic music", "gnn", "music theory", "conuterfactual", "classical music"]
 categories: ["xai", "deep learning"]
 paper_url: "http://arxiv.org/abs/2509.26521"
 doi: "10.48550/arXiv.2509.26521"

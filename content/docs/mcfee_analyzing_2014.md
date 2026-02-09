@@ -3,7 +3,7 @@ title: "Analyzing Song Structure with Spectral Clustering."
 date: 2026-02-02T13:45:57-08:00
 authors: ["Brian McFee", "Dan Ellis"]
 year: 2014
-tags: ["cqt", "music theory", "formal analysis (music)", "mfcc", "multi-representation", "non-bar/beat aligned similarity", "popular music", "music", "hierarchical analysis", "spectral clustering", "self-similarity matrix", "audio", "boundary detection (music)", "eigendecomposition"]
+tags: ["self-similarity matrix", "hierarchical analysis", "music", "mfcc", "audio", "boundary detection (music)", "eigendecomposition", "popular music", "non-bar/beat aligned similarity", "spectral clustering", "multi-representation", "music theory", "cqt", "formal analysis (music)"]
 categories: ["non-neural network"]
 paper_url: "https://zenodo.org/records/1415778"
 doi: "10.5281/zenodo.1415778"

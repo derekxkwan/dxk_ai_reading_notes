@@ -3,8 +3,8 @@ title: "An Interactive Workflow for Generating Chord Labels for Homorhythmic Mus
 date: 2026-02-02T13:45:57-08:00
 authors: ["Yaolong Ju", "Samuel Howes", "Cory McKay", "Nathaniel Condit-Schultz", "Jorge Calvo-Zaragoza", "Ichiro Fujinaga"]
 year: 2019
-tags: ["music theory", "human intervention", "human-in-the-loop", "mlp", "multi-task", "vocal instrumentation", "ensemble methods", "music", "chord labeling (music)", "harmonic analysis (music)", "svm"]
-categories: ["unsupervised", "non-neural network", "classification", "deep learning"]
+tags: ["harmonic analysis (music)", "vocal instrumentation", "multi-task", "music", "chord labeling (music)", "human intervention", "svm", "ensemble methods", "mlp", "human-in-the-loop", "music theory"]
+categories: ["classification", "unsupervised", "deep learning", "non-neural network"]
 paper_url: "https://zenodo.org/records/3527950"
 doi: "10.5281/zenodo.3527950"
 paper_src: "International Society for Music Information Retrieval Conference (ISMIR 2019)

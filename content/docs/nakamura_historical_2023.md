@@ -3,8 +3,8 @@ title: "Historical Changes of Modes and their Substructure Modeled as Pitch Dist
 date: 2026-02-02T13:45:57-08:00
 authors: ["Eita Nakamura", "Tim Eipert", "Fabian C Moss"]
 year: 2023
-tags: ["musicology", "music theory", "melodic (music)", "mixture model", "genre classification (music)", "vocal instrumentation", "pitch distribution", "renaissance music", "musicological", "music", "hierarchical analysis", "symbolic music", "pitch (music)", "classical music", "modal (music)"]
-categories: ["supervised", "non-neural network", "clustering", "probabilistic"]
+tags: ["vocal instrumentation", "musicology", "hierarchical analysis", "music", "pitch distribution", "classical music", "pitch (music)", "mixture model", "symbolic music", "renaissance music", "music theory", "melodic (music)", "musicological", "modal (music)", "genre classification (music)"]
+categories: ["non-neural network", "probabilistic", "supervised", "clustering"]
 paper_url: ""
 doi: ""
 paper_src: "Proc. of the 16th International Symposium on Computer Music Multidisciplinary Research Kyoto, Japan"

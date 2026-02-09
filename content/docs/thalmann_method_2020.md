@@ -1,10 +1,10 @@
 ---
 title: "A method for analysis of shared structure in large music collections using techniques from genetic sequencing and graph theory"
 date: 2026-02-02T13:45:57-08:00
-authors: ["Florian Thalmann", "Kazuyoshi Yoshii", "Thomas Wilmering", "Geraint Wiggins", "Mark B. Sandler"]
+authors: ["Florian Thalmann", "Kazuyoshi Yoshii", "Thomas Wilmering", "Wiggins Geraint", "Mark B. Sandler"]
 year: 2020
-tags: ["beat-aligned", "sequence alignment", "onset-aligned similarity", "hierarchical analysis", "pitch (music)", "hmm", "profile hmm", "beat-aligned similarity", "bioinformatics", "bar-aligned similarity", "musical form", "similarity graph", "chroma", "music theory", "formal analysis (music)", "msa", "bar-aligned", "music", "onset-aligned"]
-categories: ["unsupervised", "non-neural network", "probabilistic"]
+tags: ["sequence alignment", "bar-aligned", "bar-aligned similarity", "beat-aligned similarity", "profile hmm", "chroma", "onset-aligned", "beat-aligned", "music", "onset-aligned similarity", "music theory", "formal analysis (music)", "hmm", "hierarchical analysis", "similarity graph", "bioinformatics", "pitch (music)", "musical form", "msa"]
+categories: ["non-neural network", "unsupervised", "probabilistic"]
 paper_url: "https://zenodo.org/records/4245440"
 doi: "10.5281/zenodo.4245440"
 paper_src: ""

@@ -3,8 +3,8 @@ title: "Relevance of musical features for cadence detection"
 date: 2026-02-02T13:45:57-08:00
 authors: ["Louis Bigo", "Laurent Feisthauer", "Mathieu Giraud", "Florence Levé"]
 year: 2018
-tags: ["handcrafted features", "music theory", "instrumental orchestration", "cadence detection (music)", "baroque music", "classical period (music)", "music", "symbolic music", "harmonic analysis (music)", "svm", "classical music"]
-categories: ["supervised", "non-neural network"]
+tags: ["harmonic analysis (music)", "music", "svm", "instrumental orchestration", "cadence detection (music)", "classical period (music)", "baroque music", "symbolic music", "handcrafted features", "music theory", "classical music"]
+categories: ["non-neural network", "supervised"]
 paper_url: "https://hal.science/hal-01801060"
 doi: ""
 paper_src: "International Society for Music Information Retrieval Conference (ISMIR 2018)"
