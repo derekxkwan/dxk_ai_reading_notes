@@ -14,7 +14,7 @@ draft: false
 ---
 
 ## Summary
-Trains a BiLSTM on data generated to invoke GTTM's GPR6 (parallelism in melody) called LGMS. Compared with ATTA (automatic time span tree analyzer), mostly performs better but performance drops when not using LGMS in testing (used with GTTM database). Model takes as input handcrafted features to represent features of notes. 
+Trains a BiLSTM on data generated with music21 to invoke GTTM's Grouping Preference Rule GPR6 (parallelism in melody) called LGMS. Compared with ATTA (automatic time span tree analyzer), mostly performs better but performance drops when not using LGMS in testing (used with GTTM database). Model takes as input handcrafted features to represent features of notes. 
 
 ## Key Contributions
 GPR6 generation and BiLSTM model training for GPR6.
