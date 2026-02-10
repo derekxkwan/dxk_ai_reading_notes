@@ -3,7 +3,7 @@ title: "A New Dataset, Notation Software, and Representation for Computational S
 date: 2026-02-09T14:40:57-08:00
 authors: ["Stephen Ni-Hahn", "Weihan Xu", "Jerry Yin", "Rico Zhu", "Simon Mak", "Yue Jiang", "Cynthia Rudin"]
 year: 2024
-tags: ["schenker", "schenkerian", "dataset creation", "dataset", "music theory", "music analysis", "music", "json", "graph", "graph clustering"]
+tags: ["schenker", "schenkerian", "dataset creation", "dataset", "music theory", "music analysis", "music", "json", "graph", "graph clustering", "symbolic music"]
 categories: ["dataset"]
 paper_url: ""
 doi: "10.5281/zenodo.14877467"

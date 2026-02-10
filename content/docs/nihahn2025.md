@@ -3,7 +3,7 @@ title: "AutoSchA: Automatic Hierarchical Music Representations via Multi-Relatio
 date: 2026-02-09T21:01:30-08:00
 authors: ["Stephen Ni-Hahn", "Rico Zhu", "Jerry Yin", "Yue Jiang", "Cynthia Rudin", "Simon Mak"]
 year: 2025
-tags: ["schenker", "schenkerian", "graph neural network", "music theory", "music analysis", "music", "hierarchical music analysis"]
+tags: ["schenker", "schenkerian", "graph neural network", "music theory", "music analysis", "music", "hierarchical music analysis", "symbolic music"]
 categories: ["deep learning", "supervised"]
 paper_url: ""
 doi: "10.48550/arXiv.2512.18232"
