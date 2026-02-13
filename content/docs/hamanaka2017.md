@@ -3,7 +3,7 @@ title: "deepGTTM-I&II: Local Boundary and Metrical Structure Analyzer Based on D
 date: 2026-02-12T21:59:48-08:00
 authors: ["Masatoshi Hamanaka", "Keiji Hirata","Satoshi Tojo"]
 year: 2017
-tags: ["gttm", "music analysis", "hierarchical music analysis", "music segmentation", "symbolic music", "pcfg", "probabilistic context-free grammar", "deep belief network"]
+tags: ["gttm", "music analysis", "hierarchical music analysis", "music segmentation", "symbolic music", "deep belief network"]
 categories: ["deep learning", "probabilistic", "multi-task"]
 paper_url: ""
 doi: ""
