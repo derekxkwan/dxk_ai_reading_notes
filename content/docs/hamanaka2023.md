@@ -3,7 +3,7 @@ title: "deepGTTM-IV: Deep Learning Based Time-span Tree Analyzer of GTTM"
 date: 2026-02-13T11:33:13-08:00
 authors: ["Masatoshi Hamanaka", "Keiji Hirata","Satoshi Tojo"]
 year: 2023
-tags: ["gttm", "music analysis", "hierarchical music analysis", "music segmentation", "symbolic music", "transformer" "music", "music theory", "monophonic", "music formal analysis"]
+tags: ["gttm", "music analysis", "hierarchical music analysis", "music segmentation", "symbolic music", "transformer", "music", "music theory", "monophonic", "music formal analysis"]
 categories: ["deep learning", "supervised"]
 paper_url: ""
 doi: ""
