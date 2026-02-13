@@ -3,8 +3,8 @@ title: "deepGTTM-III: Multi-task Learning with Grouping and Metrical Structures"
 date: 2026-02-13T10:52:18-08:00
 authors: ["Masatoshi Hamanaka", "Keiji Hirata","Satoshi Tojo"]
 year: 2018
-tags: ["gttm", "music analysis", "hierarchical music analysis", "music segmentation", "symbolic music", "deep belief network", "music", "music theory"]
-categories: ["deep learning", "probabilistic", "multi-task"]
+tags: ["gttm", "music analysis", "hierarchical music analysis", "music segmentation", "symbolic music", "deep belief network", "music", "music theory", "monophonic", "note grouping (music)", "metrical grouping (music)", "music formal analysis"]
+categories: ["deep learning", "probabilistic", "multi-task", "supervised"]
 paper_url: ""
 doi: ""
 paper_src: "Music Technology with Swing"
