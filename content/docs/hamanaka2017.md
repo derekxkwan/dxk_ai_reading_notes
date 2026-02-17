@@ -5,7 +5,7 @@ authors: ["Masatoshi Hamanaka", "Keiji Hirata","Satoshi Tojo"]
 year: 2017
 tags: ["gttm", "music analysis", "hierarchical music analysis", "music segmentation", "symbolic music", "deep belief network", "music", "music theory", "monophonic", "note grouping (music)", "metrical grouping (music)", "music formal analysis"]
 categories: ["deep learning", "probabilistic", "multi-task", "supervised"]
-paper_url: ""
+paper_url: "https://gttm.jp/hamanaka/wp-content/uploads/2018/12/hamanaka.pdf"
 doi: ""
 paper_src: "Bridging People and Sound"
 bibkey: "hamanaka2017"

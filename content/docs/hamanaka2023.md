@@ -5,7 +5,7 @@ authors: ["Masatoshi Hamanaka", "Keiji Hirata","Satoshi Tojo"]
 year: 2023
 tags: ["gttm", "music analysis", "hierarchical music analysis", "music segmentation", "symbolic music", "transformer", "music", "music theory", "monophonic", "music formal analysis"]
 categories: ["deep learning", "supervised"]
-paper_url: ""
+paper_url: "https://gttm.jp/hamanaka/wp-content/uploads/2024/06/cmmr2023_4e-1-DeepGTMIV.pdf"
 doi: ""
 paper_src: "Proceedings of CMMR2023, the 16th International Symposium on Computer Music Multidisciplinary Research"
 bibkey: "hamanaka2023"
