@@ -6,7 +6,7 @@ year: 2026
 tags: ["music", "music theory", "evaluation", "distentangled representations", "autoencoder", "variational autoencoder", "diffusion", "equivariance", "invariance", "probing", "generative"]
 categories: ["evaluation", "supervised"]
 paper_url: ""
-doi: ""
+doi: "10.48550/arXiv.2602.10058"
 paper_src: "ICASSP"
 bibkey: "ibanez_martinez2026"
 math: true
