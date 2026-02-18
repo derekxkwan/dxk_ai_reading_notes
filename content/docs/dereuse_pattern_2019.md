@@ -3,7 +3,7 @@ title: "Pattern Clustering in Monophonic Music by Learning a Non-Linear Embeddin
 date: 2026-02-02T13:45:57-08:00
 authors: ["Timothy de Reuse", "Ichiro Fujinaga"]
 year: 2019
-tags: ["dbscan", "music", "human annotation", "monophonic (music)", "contrastive learning", "folk music", "contrastive", "mlp", "hand-crafted features", "symbolic music", "handcrafted features", "motif (music)", "music theory", "pattern discovery", "melodic (music)"]
+tags: ["dbscan", "music", "human annotation", "monophonic", "contrastive learning", "folk music", "contrastive", "mlp", "hand-crafted features", "symbolic music", "handcrafted features", "motif (music)", "music theory", "pattern discovery", "melodic (music)"]
 categories: ["deep learning", "supervised", "clustering"]
 paper_url: "https://zenodo.org/records/3527922"
 doi: "10.5281/zenodo.3527922"

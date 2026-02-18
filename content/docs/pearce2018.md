@@ -3,8 +3,8 @@ title: "Statistical learning and probabilistic prediction in music cognition: me
 date: 2026-02-18T01:40:02-08:00
 authors: ["Marcus T. Pearce"]
 year: 2018
-tags: ["music perception", "statistical learning", "probabilistic", "probabilistic prediction", "symbolic music", "music", "music theory", "monophonic (music)"]
-categories: ["unsupervised"]
+tags: ["music perception", "statistical learning", "probabilistic prediction", "symbolic music", "music", "music theory", "monophonic"]
+categories: ["unsupervised", "probabilistic"]
 paper_url: ""
 doi: "10.1111/nyas.13654"
 paper_src: "Annals of the New York Academy of Sciences"
