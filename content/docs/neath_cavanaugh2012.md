@@ -3,7 +3,7 @@ title: "The Bayesian information criterion: background, derivation, and applicat
 date: 2026-03-15T22:13:13-07:00
 authors: ["Andrew A. Neath", "Joseph E. Cavanaugh"]
 year: 2012
-tags: ["statistics", "information theory", "bic"]
+tags: ["statistics", "information theory", "bic", "bayesian"]
 categories: ["statistics"]
 paper_url: ""
 doi: "10.1002/wics.199"
