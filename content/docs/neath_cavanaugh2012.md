@@ -29,9 +29,9 @@ Overview of work on BIC (one likelihood) and applications (Bayes ratio approx, p
 
 ## Key Equations
 
-Approximation of negative log posterior of model $k$ $-2 \cdot \ln P(k | y)$
+Approximation of negative log posterior of model $k$ $-2 \cdot \ln P(k | y)$ where $k$ = number of parameters and $n$ = size of data used to fit model:
 
-$-2 \ln P(k|y) \approx S(k|y) \approx -2 L(\hat{\theta}_k | y) + k \cdot \ln(n)$ where $L(\hat{\theta}_k | y) = f(y | \hat{\theta_k})$ (likelihood)
+$-2 \ln P(k|y) \approx S(k|y) \approx -2 \ln L(\hat{\theta}_k | y) + k \cdot \ln(n)$ where $L(\hat{\theta}_k | y) = f(y | \hat{\theta_k})$ (likelihood)
 
 Bayes factor approximation: 
 
