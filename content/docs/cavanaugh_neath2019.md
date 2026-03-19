@@ -30,7 +30,8 @@ draft: false
 - Notation does not specify what expectations are over. Assume everything not fixed ($\hat{\theta}_k$ is an RV) is taken over the expectation.
 ### Intuition on Terms
 - $\mathbb{E}[d(\hat{\theta})]$ is average performance of a model over different experiments (take $\mathbb{E}_y$ first and then take $\mathbb{E}_{\hat{\theta}}$)
-- $\mathbb{E}[-2 \log f(y | \hat{\theta})$ does the expectation over $y, \hat{\theta}$ at the same time ($y$ used to find $\hat{\theta}$) so it is training performance ($y$ is a single data point, $\hat{\theta}$ was found from $n_{train}$ points)
-- $\mathbb{E}[-2 \log f(y | \theta_o)$ does the expectation over $y$ ($\theta_o$ is the "true parameter vector"). We can count $f(y | \theta_o)$ as the true probability of an event so $y$ is the average probability of an event.
-- $\mathbb{E}[-2 \log f(y | \theta_o) - \mathbb{E}[-2 \log (f | \hat{\theta})]$ is in-sample estimation error. How far are off from the true probability of an event in-sample.
-- $d(\hat{\theta}) - \mathbb{E}[-2 \log f(y | \theta_o)$ is out-of-sample estimation error. How far are off from the true probability of an event out-of-sample (generalization error)
+- $\mathbb{E}[-2 \log f(y | \hat{\theta})]$ does the expectation over $y, \hat{\theta}$ at the same time ($y$ used to find $\hat{\theta}$) so it is training performance ($y$ is a single data point, $\hat{\theta}$ was found from $n_{train}$ points)
+- $\mathbb{E}[-2 \log f(y | \theta_o)]$ does the expectation over $y$ ($\theta_o$ is the "true parameter vector"). We can count $f(y | \theta_o)$ as the true probability of an event so $y$ is the average probability of an event.
+- $\mathbb{E}[-2 \log f(y | \theta_o)] - \mathbb{E}[-2 \log (f | \hat{\theta})]$ is in-sample estimation error. How far are off from the true probability of an event in-sample.
+- $d(\hat{\theta}) - \mathbb{E}[-2 \log f(y | \theta_o)]$ is out-of-sample estimation error. How far are off from the true probability of an event out-of-sample (generalization error)
+- Expected Fisher Information Matrix  $I(\theta) = \mathbb{E}[- \frac{\partial^2 \log f(y | \theta)}{\partial \theta \partial \theta^{\prime}}]$ takes the expectation over $y$ (take Hessian, average over $y$)
