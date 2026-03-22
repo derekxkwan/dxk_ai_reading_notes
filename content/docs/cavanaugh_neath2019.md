@@ -29,6 +29,12 @@ draft: false
 - both in-sample error and out-of-sample error $= k + o(1)$
 - So $\Delta(k) = \mathbb{E}{d(\hat{\theta}_k)} = \mathbb{E}(-2 \log f(y | \hat{\theta}) + in-sample + out-of-sample = \mathbb{E}(-2 \log f(y | \hat{\theta}) + 2k$  
 - Bootstrap sampling samples from a data distribution to get $\hat{\theta}^{*}$ and then validates on the full distribution (chance of non-selection of datapoint is $\frac{1 - \frac{1}{n}}{n}$ which goes to $\frac{1}{e}$ as $n \rightarrow \infty$
+- For TIC, penalty term is $2 tr[J(\hat{\theta})[I(\hat{\theta})]^{-1}]$ where $J(\theta) = \mathbb{E}[(\frac{\partial \log f(y | \theta)}{\partial \theta})(\frac{\partial \log f(y | \theta)}{\partial \theta})^T]$
+    - Note that variance of the score function = $\mathbb{E}[score \cdot score^T] - \mathbb{E}[score]\mathbb{E}[score]^T$ and at $\hat{\theta}$, $\mathbb{E}[score] = 0$ so we have $J{\theta}$
+    - since $J(\hat{\theta}) = I(\hat{\theta})$, the expression is $2 Tr(I) = 2k$
+- MSE refers to the unbiased estimator of $\sigma^2$ (variance of error) $\frac{SSE}{n-p}$ where $p$ is rank of design matrix and $SSE$ is sum of squared error so when $p$ increases, denominator decreases so MSE decreases
+    - $\mathbb{E}[MSE] > \sigma_0^2$ for underspecified models, $=$ otherwise.
+- Mallows $C_p = \frac{SSE}{MSE_{+}} - n + 2p$ where $MSE_+$ MSE of largest fitted model ($\mathbb{E}[MSE_{+}] = \sigma^2_0$)
 ### Notation
 - Notation does not specify what expectations are over. Assume everything not fixed ($\hat{\theta}_k$ is an RV) is taken over the expectation.
 ### Intuition on Terms
@@ -39,7 +45,4 @@ draft: false
 - $d(\hat{\theta}) - \mathbb{E}[-2 \log f(y | \theta_o)]$ is out-of-sample estimation error. How far are off from the true probability of an event out-of-sample (generalization error)
 - Expected Fisher Information Matrix  $I(\theta) = \mathbb{E}[- \frac{\partial^2 \log f(y | \theta)}{\partial \theta \partial \theta^{\prime}}]$ takes the expectation over $y$ (take Hessian, average over $y$)
 - Mean prediction error for future data $z$: $\Delta(k) = \mathbb{E} E { -2 log f (z | \hat{\theta}_k)$ where $\hat{\theta}_k$ arises from fitting to $y$ and the new expectation is over $z$.
-- For TIC, penalty term is $2 tr[J(\hat{\theta})[I(\hat{\theta})]^{-1}]$ where $J(\theta) = \mathbb{E}[(\frac{\partial \log f(y | \theta)}{\partial \theta})(\frac{\partial \log f(y | \theta)}{\partial \theta})^T]$
-    - Note that variance of the score function = $\mathbb{E}[score \cdot score^T] - \mathbb{E}[score]\mathbb{E}[score]^T$ and at $\hat{\theta}$, $\mathbb{E}[score] = 0$ so we have $J{\theta}$
-    - since $J(\hat{\theta}) = I(\hat{\theta})$, the expression is $2 Tr(I) = 2k$
-- MSE refers to the unbiased estimator of $\sigma^2$ (variance of error) $\frac{SSE}{n-p}$ where $p$ is rank of design matrix and $SSE$ is sum of squared error so when $p$ increases, denominator decreases so MSE decreases
+
