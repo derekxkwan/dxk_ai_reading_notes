@@ -51,7 +51,7 @@ $\Delta(k) = \mathbb{E}[ -2 log f(y | \hat{theta}] + (\mathbb{E}[-2 \log f(y | \
 - MSE refers to the unbiased estimator of $\sigma^2$ (variance of error) $\frac{SSE}{n-p}$ where $p$ is rank of design matrix and $SSE$ is sum of squared error so when $p$ increases, denominator decreases so MSE decreases
     - $\mathbb{E}[MSE] > \sigma_0^2$ for underspecified models, $=$ otherwise.
 - Mallows $C_p = \frac{SSE}{MSE_{+}} - n + 2p$ where $MSE_+$ MSE of largest fitted model ($\mathbb{E}[MSE_{+}] = \sigma^2_0$)
-    - correctly/overspecified $C_p approx p$, else $C_p > p$
+    - correctly/overspecified $C_p \approx p$, else $C_p > p$
 ### Notation
 - Notation does not specify what expectations are over. Assume everything not fixed ($\hat{\theta}_k$ is an RV) is taken over the expectation.
 ### Intuition on Terms
