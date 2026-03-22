@@ -16,7 +16,7 @@ draft: false
 ## Summary
 This paper gives intuitions on using the AIC and what it estimates.
 
-Given parameter space $\Theta(k)$ with elements $\theta_k$ and KL divergence between true model $g(y)$ and candidate model $f(y|\theta_k)$ $KL(\theta_k) = \mathbb{E}[\log \frac{g(y)}{f(y|theta_k)}]$, we define Kullback discrepancy $d(\theta_k) = \mathbb{E}[-2 \log f(y | \theta_k)$ and note that $2 KL(\theta_k) = d(\theta_k) - \mathbb{E}[-2 \log g(y)]$. Since the second term is the same given all candidate models, we drop it and judge candidate models by Kullback disprepancy.
+Given parameter space $\Theta(k)$ with elements $\theta_k$ and KL divergence between true model $g(y)$ and candidate model $f(y|\theta_k)$ $KL(\theta_k) = \mathbb{E}[\log \frac{g(y)}{f(y|\theta_k)}]$, we define Kullback discrepancy $d(\theta_k) = \mathbb{E}[-2 \log f(y | \theta_k)$ and note that $2 KL(\theta_k) = d(\theta_k) - \mathbb{E}[-2 \log g(y)]$. Since the second term is the same given all candidate models, we drop it and judge candidate models by Kullback disprepancy.
 
 We can define $AIC = -2 \log f(y| \hat{\theta}_k) + 2k$ and note that asymptotically approaches the expected value of $\Delta(k) = \mathbb{E}[d(\hat{\theta}_k]$ where expectation is taken first over $y$ then $\theta_k$.
 
@@ -24,7 +24,7 @@ AIC is noted to be **asymptotically efficient** (find models that are "predictiv
 
 AIC and BIC are then viewed in the predictive lens using a validation data $z$.
 
-Extensions of AIC are discussed ($AIC_c$, $TIC$) and AIC is compared to $R^2_{adj}$ and Mallows $C_p$. A table is presented where all criterion are said to take the form $-2 log f(y | \hat{\theta}) + a_n k)$ where $R^2_adj$ has form $a_n k = k$, AIC/TIC/$C_p$/PRESS have form $2k$ (predictive), CAIC has form $k \log n + k$ (descriptive), and BIC form $k \log n$ (descriptive)
+Extensions of AIC are discussed ($AIC_c$, $TIC$) and AIC is compared to $R^2_{adj}$ and Mallows $C_p$. A table is presented where all criterion are said to take the form $-2 log f(y | \hat{\theta}) + a_n k)$ where $R^2_adj$ has form $a_n k = k$, AIC/TIC/$C_p$/PRESS have form $2k$ (predictive), CAIC has form $k \log n + k$ (descriptive), and BIC form $k \log n$ (descriptive).
  
 ## Key Contributions
 Overview of intuitions of AIC and comparison with BIC as well as other information criterion.
@@ -61,5 +61,5 @@ $\Delta(k) = \mathbb{E}[ -2 log f(y | \hat{theta}] + (\mathbb{E}[-2 \log f(y | \
 - $\mathbb{E}[-2 \log f(y | \theta_o)] - \mathbb{E}[-2 \log (f | \hat{\theta})]$ is in-sample estimation error. How far are off from the true probability of an event in-sample.
 - $d(\hat{\theta}) - \mathbb{E}[-2 \log f(y | \theta_o)]$ is out-of-sample estimation error. How far are off from the true probability of an event out-of-sample (generalization error)
 - Expected Fisher Information Matrix  $I(\theta) = \mathbb{E}[- \frac{\partial^2 \log f(y | \theta)}{\partial \theta \partial \theta^{\prime}}]$ takes the expectation over $y$ (take Hessian, average over $y$)
-- Mean prediction error for future data $z$: $\Delta(k) = \mathbb{E} E { -2 log f (z | \hat{\theta}_k)$ where $\hat{\theta}_k$ arises from fitting to $y$ and the new expectation is over $z$.
+- Mean prediction error for future data $z$: $\Delta(k) = \mathbb{E} { -2 \log f (z | \hat{\theta}_k)$ where $\hat{\theta}_k$ arises from fitting to $y$ and the new expectation is over $z$.
 
