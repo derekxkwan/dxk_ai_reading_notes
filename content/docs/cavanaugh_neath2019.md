@@ -26,6 +26,8 @@ draft: false
 
 
 ## Other Notes
+- both in-sample error and out-of-sample error $= k + o(1)$
+- So $\Delta(k) = \mathbb{E}{d(\hat{\theta}_k)} = \mathbb{E}(-2 \log f(y | \hat{\theta}) + in-sample + out-of-sample = \mathbb{E}(-2 \log f(y | \hat{\theta}) + 2k$  
 ### Notation
 - Notation does not specify what expectations are over. Assume everything not fixed ($\hat{\theta}_k$ is an RV) is taken over the expectation.
 ### Intuition on Terms
@@ -35,3 +37,4 @@ draft: false
 - $\mathbb{E}[-2 \log f(y | \theta_o)] - \mathbb{E}[-2 \log (f | \hat{\theta})]$ is in-sample estimation error. How far are off from the true probability of an event in-sample.
 - $d(\hat{\theta}) - \mathbb{E}[-2 \log f(y | \theta_o)]$ is out-of-sample estimation error. How far are off from the true probability of an event out-of-sample (generalization error)
 - Expected Fisher Information Matrix  $I(\theta) = \mathbb{E}[- \frac{\partial^2 \log f(y | \theta)}{\partial \theta \partial \theta^{\prime}}]$ takes the expectation over $y$ (take Hessian, average over $y$)
+- Mean prediction error for future data $z$: $\Delta(k) = \mathbb{E} E { -2 log f (z | \hat{\theta}_k)$ where $\hat{\theta}_k$ arises from fitting to $y$ and the new expectation is over $z$.
