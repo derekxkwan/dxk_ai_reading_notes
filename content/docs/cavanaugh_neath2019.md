@@ -61,5 +61,5 @@ $\Delta(k) = \mathbb{E}[ -2 log f(y | \hat{theta}] + (\mathbb{E}[-2 \log f(y | \
 - $\mathbb{E}[-2 \log f(y | \theta_o)] - \mathbb{E}[-2 \log (f | \hat{\theta})]$ is in-sample estimation error. How far are off from the true probability of an event in-sample.
 - $d(\hat{\theta}) - \mathbb{E}[-2 \log f(y | \theta_o)]$ is out-of-sample estimation error. How far are off from the true probability of an event out-of-sample (generalization error)
 - Expected Fisher Information Matrix  $I(\theta) = \mathbb{E}[- \frac{\partial^2 \log f(y | \theta)}{\partial \theta \partial \theta^{\prime}}]$ takes the expectation over $y$ (take Hessian, average over $y$)
-- Mean prediction error for future data $z$ is $\Delta(k) = \mathbb{E}[ -2 \log f(z | \hat{\theta_k}]$ where $\hat{\theta}_k$ arises from fitting to $y$ and the new expectation is over $z$ .
+- Mean prediction error for future data $z$ is $\Delta(k) = \mathbb{E}[ -2 \log f(z | \hat{\theta_k})]$ where $\hat{\theta}_k$ arises from fitting to $y$ and the new expectation is over $z$ .
 
