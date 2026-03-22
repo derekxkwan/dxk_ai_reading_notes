@@ -28,6 +28,7 @@ draft: false
 ## Other Notes
 - both in-sample error and out-of-sample error $= k + o(1)$
 - So $\Delta(k) = \mathbb{E}{d(\hat{\theta}_k)} = \mathbb{E}(-2 \log f(y | \hat{\theta}) + in-sample + out-of-sample = \mathbb{E}(-2 \log f(y | \hat{\theta}) + 2k$  
+- Bootstrap sampling samples from a data distribution to get $\hat{\theta}^{*}$ and then validates on the full distribution (chance of non-selection of datapoint is $\frac{1 - \frac{1}{n}}{n}$ which goes to $\frac{1}{e}$ as $n \rightarrow \infty$
 ### Notation
 - Notation does not specify what expectations are over. Assume everything not fixed ($\hat{\theta}_k$ is an RV) is taken over the expectation.
 ### Intuition on Terms
@@ -41,3 +42,4 @@ draft: false
 - For TIC, penalty term is $2 tr[J(\hat{\theta})[I(\hat{\theta})]^{-1}]$ where $J(\theta) = \mathbb{E}[(\frac{\partial \log f(y | \theta)}{\partial \theta})(\frac{\partial \log f(y | \theta)}{\partial \theta})^T]$
     - Note that variance of the score function = $\mathbb{E}[score \cdot score^T] - \mathbb{E}[score]\mathbb{E}[score]^T$ and at $\hat{\theta}$, $\mathbb{E}[score] = 0$ so we have $J{\theta}$
     - since $J(\hat{\theta}) = I(\hat{\theta})$, the expression is $2 Tr(I) = 2k$
+- MSE refers to the unbiased estimator of $\sigma^2$ (variance of error) $\frac{SSE}{n-p}$ where $p$ is rank of design matrix and $SSE$ is sum of squared error so when $p$ increases, denominator decreases so MSE decreases
