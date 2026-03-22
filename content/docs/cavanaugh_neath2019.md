@@ -16,7 +16,7 @@ draft: false
 ## Summary
 This paper gives intuitions on using the AIC and what it estimates.
 
-Given parameter space $\Theta(k)$ with elements $\theta_k$ and KL divergence between true model $g(y)$ and candidate model $f(y|\theta_k)$ $KL(\theta_k) = \mathbb{E}[\log \frac{g(y)}{f(y|\theta_k)}]$, we define Kullback discrepancy $d(\theta_k) = \mathbb{E}[-2 \log f(y | \theta_k)$ and note that $2 KL(\theta_k) = d(\theta_k) - \mathbb{E}[-2 \log g(y)]$. Since the second term is the same given all candidate models, we drop it and judge candidate models by Kullback disprepancy.
+Given parameter space $\Theta(k)$ with elements $\theta_k$ and KL divergence between true model $g(y)$ and candidate model $f(y|\theta_k)$ $KL(\theta_k) = \mathbb{E}[\log \frac{g(y)}{f(y|\theta_k)}]$, we define Kullback discrepancy $d(\theta_k) = \mathbb{E}[-2 \log f(y | \theta_k)]$ and note that $2 KL(\theta_k) = d(\theta_k) - \mathbb{E}[-2 \log g(y)]$. Since the second term is the same given all candidate models, we drop it and judge candidate models by Kullback disprepancy.
 
 We can define $AIC = -2 \log f(y| \hat{\theta}_k) + 2k$ and note that asymptotically approaches the expected value of $\Delta(k) = \mathbb{E}[d(\hat{\theta}_k]$ where expectation is taken first over $y$ then $\theta_k$.
 
@@ -61,5 +61,5 @@ $\Delta(k) = \mathbb{E}[ -2 log f(y | \hat{theta}] + (\mathbb{E}[-2 \log f(y | \
 - $\mathbb{E}[-2 \log f(y | \theta_o)] - \mathbb{E}[-2 \log (f | \hat{\theta})]$ is in-sample estimation error. How far are off from the true probability of an event in-sample.
 - $d(\hat{\theta}) - \mathbb{E}[-2 \log f(y | \theta_o)]$ is out-of-sample estimation error. How far are off from the true probability of an event out-of-sample (generalization error)
 - Expected Fisher Information Matrix  $I(\theta) = \mathbb{E}[- \frac{\partial^2 \log f(y | \theta)}{\partial \theta \partial \theta^{\prime}}]$ takes the expectation over $y$ (take Hessian, average over $y$)
-- Mean prediction error for future data $z$ is $\Delta(k) = \mathbb{E}[ -2 \log f(z | \hat{\theta_k})]$ where $\hat{\theta}_k$ arises from fitting to $y$ and the new expectation is over $z$ .
+- Mean prediction error for future data $z$ is $\Delta(k) = \mathbb{E}[ -2 \log f(z | \hat{\theta}_k)]$ where $\hat{\theta}_k$ arises from fitting to $y$ and the new expectation is over $z$ .
 
