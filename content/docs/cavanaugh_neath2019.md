@@ -33,7 +33,7 @@ Overview of intuitions of AIC and comparison with BIC as well as other informati
 
 
 ## Key Equations
-Kullback discrepancy: $d(\theta_k) = \mathbb{E}[-2 \log f(y | \theta_k)$
+Kullback discrepancy: $d(\theta_k) = \mathbb{E}[-2 \log f(y | \theta_k)]$
 
 AIC: $-2 \log f(y|\hat{\theta}_k) + 2k$
 
