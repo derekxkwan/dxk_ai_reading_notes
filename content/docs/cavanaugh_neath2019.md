@@ -38,3 +38,6 @@ draft: false
 - $d(\hat{\theta}) - \mathbb{E}[-2 \log f(y | \theta_o)]$ is out-of-sample estimation error. How far are off from the true probability of an event out-of-sample (generalization error)
 - Expected Fisher Information Matrix  $I(\theta) = \mathbb{E}[- \frac{\partial^2 \log f(y | \theta)}{\partial \theta \partial \theta^{\prime}}]$ takes the expectation over $y$ (take Hessian, average over $y$)
 - Mean prediction error for future data $z$: $\Delta(k) = \mathbb{E} E { -2 log f (z | \hat{\theta}_k)$ where $\hat{\theta}_k$ arises from fitting to $y$ and the new expectation is over $z$.
+- For TIC, penalty term is $2 tr[J(\hat{\theta})[I(\hat{\theta})]^{-1}]$ where $J(\theta) = \mathbb{E}[(\frac{\partial \log f(y | \theta)}{\partial \theta})(\frac{\partial \log f(y | \theta)}{\partial \theta})^T]$
+    - Note that variance of the score function = $\mathbb{E}[score \cdot score^T] - \mathbb{E}[score]\mathbb{E}[score]^T$ and at $\hat{\theta}$, $\mathbb{E}[score] = 0$ so we have $J{\theta}$
+    - since $J(\hat{\theta}) = I(\hat{\theta})$, the expression is $2 Tr(I) = 2k$
