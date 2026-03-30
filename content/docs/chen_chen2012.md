@@ -30,10 +30,10 @@ Extension of BIC to large parameter models (which BIC performs poorly in).
 
 ## Key Equations
 ### GLM of interest here
-- $f(y; \theta) = \exp(\theta^Ty - b(\theta)$
+- $f(y; \theta) = \exp(\theta^Ty - b(\theta))$
     - $E(Y) = b^{\prime}(\theta) = \mu$
-    - $Var(Y) = b^{\prime \prime}(\theta) = \sigma^2)$
-    - MGF: $M(t) = \exp(b(\theta+t) - b(\theta)$
+    - $Var(Y) = b^{\prime \prime}(\theta) = \sigma^2$
+    - MGF: $M(t) = \exp(b(\theta+t) - b(\theta))$
 ### EBIC
 - $EBIC(s) = -2l_n(\hat{\beta}(s)) + \nu(s) \log n + 2 \nu(s) \gamma \log P$
 ### Theorems (with Claude summaries)
