@@ -52,7 +52,7 @@ Extension of BIC to large parameter models (which BIC performs poorly in).
     - EBIC correctly orders models by size below the true sparsity (if $k < \nu(s_0)$, adding another feature improves EBIC).
 
 ### Metrics
-- PSR: $\frac{\sum_{j=1}^N \nu(s_j^{*} \cup s_0)}{N \nu(s_0)}$
+- PSR: $\frac{\sum_{j=1}^N \nu(s_j^{*} \cap s_0)}{N \nu(s_0)}$
 - FDR = $\frac{1}{N} \sum\limits_{j=1}^N \frac{\nu(s_j^{*}/s_0)}{v(s_j^{*})}$
 - $s_j^{*}$: "features selected in $j$th replicate ($j = 1 \dots N$)
 ## Other Notes
